@@ -143,6 +143,8 @@ body {
     background: #f4deff;
     box-shadow: 0px 22px 60px -5px rgba(244, 222, 255, 0.85) !important;
     text-decoration: none;
+    cursor: pointer;
+    outline: 0;
 }
 
 
@@ -260,16 +262,11 @@ body {
     background-size: cover;
     background-position: center;
     margin: 0 auto;
-}
-
-.border-img {
     border-style: solid;
     border-width: 13px;
     border-color: rgb(244, 222, 255);
     border-radius: 50%;
-
 }
-
 
 .slick-initialized .slick-slide {
     outline: 0;
@@ -282,6 +279,7 @@ body {
 .slick-prev:before {
     content: url("../images/passive.png") !important;
 }
+
 
 .teacher-item-name {
     font-size: 20px;
@@ -518,6 +516,7 @@ form {
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
+    text-align: center;
 }
 
 .form-info {
@@ -525,7 +524,6 @@ form {
     width: 313px;
     height: 64px;
     border-radius: 40px;
-    margin-bottom: 30px;
     outline: none;
     padding: 0 28px;
     box-sizing: border-box;
@@ -542,6 +540,14 @@ form .btn {
     outline: 0;
 }
 
+.er {
+    margin-left: 31px;
+    font-size: 15px;
+    width: 180px;
+    text-align: left;
+}
+
+
 .hvr-shutter-in-horizontal:before {
     background: white !important;
     border-radius: 50px;
@@ -551,19 +557,23 @@ form .btn {
     background: #f4deff !important;
 }
 
+
+.hvr-shutter-in-horizontal:active, .hvr-shutter-in-horizontal:focus, .hvr-shutter-in-horizontal:hover {
+    color: rgb(63, 62, 62);
+}
+
 #contacts-info {
     display: flex;
 }
 
 #map {
     margin-top: 12px;
-    width: 700px;
     height: 367px;
 }
 
 #more-contacts {
     width: 710px;
-    height: 140px;
+    height: 127px;
     background: #f4deff;
     border-bottom-right-radius: 10px;
     display: flex;
@@ -610,9 +620,13 @@ form .btn {
 
 #privacy_policy {
     margin-top: 30px;
+}
+
+#privacy_policy a {
     font-size: 18px;
     font-family: "RalewayLighty", sans-serif;
     color: rgb(143, 127, 151);
+    text-decoration: none;
 }
 
 #rights {
@@ -620,16 +634,6 @@ form .btn {
     font-size: 18px;
     font-family: "RalewayLight", sans-serif;
     color: rgb(180, 179, 176);
-
-}
-
-.error-text {
-    color: red;
-    font-size: 19px;
-    font-family: "RalewayMedium", sans-serif;
-    margin-top: -24px;
-    margin-bottom: 20px;
-    display: none;
 }
 
 #form-send {
@@ -718,5 +722,65 @@ form .btn {
     100% {
         transform: scale(0.9);
     }
+}
+
+.more-info-products, .yoga-1, .yoga-2, .yoga-3, .yoga-4 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba(128, 128, 128, 0.82);
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 6;
+}
+
+.more-info-products-container {
+    width: 700px;
+    border-style: solid;
+    border-width: 7px;
+    border-color: rgb(244, 222, 255);
+    border-radius: 10px;
+    background: white;
+    position: relative;
+    padding: 30px;
+}
+
+.more-info-products-container h2.title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.more-info-products-text {
+    font-size: 18px;
+    font-family: "RalewayLight", sans-serif;
+    color: rgb(63, 62, 62);
+    line-height: 1.111;
+    text-align: center;
+}
+
+.more-info-products-cancel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#menu svg {
+    width: 40px;
+    height: 40px;
+    fill: rgba(63, 62, 62, 0.702);
+    display: none;
+}
+
+#menu-cancel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 3;
+    display: none;
 }
 
