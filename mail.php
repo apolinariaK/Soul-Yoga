@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = $_POST['phone'];
 
     $content = $name . ' оставил заявку на бронирование урока ' . '. Его телефон: ' . $phone;
-    $success = mail("admin@yoga.com", 'Запрос на бронирование урока', $content);
+    $success = mail("admin@soul-yoga.site", 'Запрос на бронирование урока', $content);
 
     if ($success) {
         http_response_code(200);

@@ -93,7 +93,7 @@ $(document).ready(function () {
                         $.ajax({
                             method: "POST",
                             url: "main.php",
-                            data: 'name=' + name + '&phone=' + phone,
+                            data: 'name=' + name.val() + '&phone=' + phone.val(),
                             success: () => {
                                 $('#form-send').show();
                                 loader.hide();
